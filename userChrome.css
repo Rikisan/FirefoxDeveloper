@@ -5,3 +5,58 @@
 
 /* Bookmarks Toolbar: no icons */
 #personal-bookmarks .toolbarbutton-icon { display: none !important; }
+
+/* #PersonalToolbar { display:none!important; } */
+/* #CustomizeToolbarWindow { display:none!important; } */
+
+/* #openLocation, #urlbar-container { display:none!important; } */
+/* #search-container { display:none!important; } */
+/* #personal-bookmarks { display:none!important; } */
+
+/* Hide stuff */
+.tabbrowser-tab:not([busy="true"]):not([pinned]) .tab-icon-image,
+.tabbrowser-tab .tab-close-button, .tabs-newtab-button, .tab-line, 
+#alltabs-button,
+#main-window :-moz-any(#back-button, #forward-button),
+#userContext-label, #userContext-indicator,
+#urlbar[pageproxystate="valid"] > #identity-box.extensionPage > #extension-icon,
+#urlbar[pageproxystate="valid"] :-moz-any(.verifiedDomain,.verifiedIdentity) #connection-icon,
+#urlbar-zoom-button, #pageActionSeparator, #identity-box,
+.urlbar-history-dropmarker, .urlbar-page-action, .urlbar-go-button, 
+.toolbarbutton-1,
+.autocomplete-richlistitem[type="favicon"], 
+.autocomplete-richlistitem[type="switchtab"]
+/*#titlebar*/
+{
+  display: none !important;
+}
+
+/* remove this weird extra separator mozilla tacks on before the page content */
+#navigator-toolbox::after {
+  background-color: var(--bg-light) !important;
+  display: none !important;
+}
+
+/* Hide tab border */
+.tabbrowser-tab::after, .tabbrowser-tab::before {
+   border-left: none !important; /* Remove borders from inactive tabs */
+}
+:root {
+  --tabs-border: transparent !important; /* Remove borders from active tab and below tabs */
+}
+
+.titlebar-buttonbox {
+  margin-right: 10px !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* borderless search bar */
+#nav-bar {
+   display: none !important;
+  /* -moz-box-ordinal-group: 1 !important; */
+  border: none !important;
+  box-shadow: none !important;
+  padding-left: 1.25px !important;
+  /*padding-bottom: 0px !important;*/
+}
