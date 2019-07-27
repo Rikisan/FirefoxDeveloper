@@ -60,3 +60,25 @@
   padding-left: 1.25px !important;
   /*padding-bottom: 0px !important;*/
 }
+
+#urlbar, .searchbar-textbox {
+  /*display: none !important;*/
+  border: none !important;
+  box-shadow: none !important;
+  font-size: 8.5pt !important;
+  min-height: var(--url-height) !important;
+  margin-right: -104px !important;
+}
+
+/* Color */
+#nav-bar {
+  background: var(--bg-light) !important;
+}
+#urlbar, #urlbar-container {
+  /*display: none !important;*/
+  background: var(--bg-light) !important;
+  color: var(--fg-dark) !important;
+  padding-left: 2px !important;
+  /*text-align: center !important;*/
+}
+
